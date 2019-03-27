@@ -62,43 +62,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-testArticle" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/27/testArticle/" class="article-date">
-  <time datetime="2019-03-27T09:32:13.080Z" itemprop="datePublished">2019-03-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/27/testArticle/">TestArticle</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#testArticle</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/27/testArticle/" data-id="cjtr0hrgj000058s68ze7x9ve" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/27/hello-world/" class="article-date">
@@ -144,6 +107,35 @@
 
 
   
+    <article id="post-Git常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/26/Git常用命令/" class="article-date">
+  <time datetime="2019-03-26T07:08:00.328Z" itemprop="datePublished">2019-03-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###分支<br>|命令|作用|<br>|—|—|<br>|git branch [branchname]| 创建分支 |<br>|git checkout [branchname]| 切换分支|<br>|git checkout -b [branchname] |创建并切换到新的分支|<br>|git branch -d [branchname]|删除分支|<br>|git push origin [branchname]|将本地分支推送到远端|<br>|git push origin –delete [branchname]|删除远程分支|<br>|git checkout -b [branchname] [tagname]| 检出标签，在特定的标签上创建一个新的分支|</p>
+<p>###标签：<br>|命令|作用|<br>|—|—|<br>|git tag -a [tagname] -m ‘标签描述信息’| 打标签 |<br>|git tag -a [tagname] 9fceb02 -m ‘标签信息’|后期打标签(9fceb02:提交的校验和)|<br>|git push origin [tagname]|推送标签到远端|<br>|git tag -d [tagname]|删除本地标签|<br>|git push origin :refs/tags/[tagname]|删除远端tag|</p>
+<p>###其他：<br>|命令|作用|<br>|—|—|<br>|git commit -m ‘initial commit’(错误的提交)； git add filename(添加忘提交的文件)； git commit –amend -m ‘新的提交信息’(覆盖之前错误的提交)|有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。此时，可以运行带有 –amend 选 项的提交命令尝试重新提交|<br>|git clean -fd [filename]| 删除未跟踪文件|</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/26/Git常用命令/" data-id="cjtr1bs6f0000jes6xz1f5h2q" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
 
 
 </section>
@@ -175,11 +167,11 @@
       <ul>
         
           <li>
-            <a href="/2019/03/27/testArticle/">TestArticle</a>
+            <a href="/2019/03/27/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2019/03/27/hello-world/">Hello World</a>
+            <a href="/2019/03/26/Git常用命令/">(no title)</a>
           </li>
         
       </ul>
