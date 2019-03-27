@@ -7,17 +7,17 @@
   
   <title>Git常用命令 | doubleGang blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###分支|命令|作用||—|—||git branch [branchname]| 创建分支 ||git checkout [branchname]| 切换分支||git checkout -b [branchname] |创建并切换到新的分支||git branch -d [branchname]|删除分支||git push origin [branchname]|将本地分支推送到远端||g">
+  <meta name="description" content="###分支：    命令 作用     git branch [branchname] 创建分支   git checkout [branchname] 切换分支   git checkout -b [branchname] 创建并切换到新的分支   git branch -d [branchname] 删除分支   git push origin [branchname] 将本地分支推送到远端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git常用命令">
 <meta property="og:url" content="http://yoursite.com/2019/03/26/Git常用命令/index.html">
 <meta property="og:site_name" content="doubleGang blog">
-<meta property="og:description" content="###分支|命令|作用||—|—||git branch [branchname]| 创建分支 ||git checkout [branchname]| 切换分支||git checkout -b [branchname] |创建并切换到新的分支||git branch -d [branchname]|删除分支||git push origin [branchname]|将本地分支推送到远端||g">
+<meta property="og:description" content="###分支：    命令 作用     git branch [branchname] 创建分支   git checkout [branchname] 切换分支   git checkout -b [branchname] 创建并切换到新的分支   git branch -d [branchname] 删除分支   git push origin [branchname] 将本地分支推送到远端">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-27T10:04:21.028Z">
+<meta property="og:updated_time" content="2019-03-27T10:08:58.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常用命令">
-<meta name="twitter:description" content="###分支|命令|作用||—|—||git branch [branchname]| 创建分支 ||git checkout [branchname]| 切换分支||git checkout -b [branchname] |创建并切换到新的分支||git branch -d [branchname]|删除分支||git push origin [branchname]|将本地分支推送到远端||g">
+<meta name="twitter:description" content="###分支：    命令 作用     git branch [branchname] 创建分支   git checkout [branchname] 切换分支   git checkout -b [branchname] 创建并切换到新的分支   git branch -d [branchname] 删除分支   git push origin [branchname] 将本地分支推送到远端">
   
     <link rel="alternate" href="/atom.xml" title="doubleGang blog" type="application/atom+xml">
   
@@ -86,10 +86,96 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###分支<br>|命令|作用|<br>|—|—|<br>|git branch [branchname]| 创建分支 |<br>|git checkout [branchname]| 切换分支|<br>|git checkout -b [branchname] |创建并切换到新的分支|<br>|git branch -d [branchname]|删除分支|<br>|git push origin [branchname]|将本地分支推送到远端|<br>|git push origin –delete [branchname]|删除远程分支|<br>|git checkout -b [branchname] [tagname]| 检出标签，在特定的标签上创建一个新的分支|</p>
-<p>###标签：<br>|命令|作用|<br>|—|—|<br>|git tag -a [tagname] -m ‘标签描述信息’| 打标签 |<br>|git tag -a [tagname] 9fceb02 -m ‘标签信息’|后期打标签(9fceb02:提交的校验和)|<br>|git push origin [tagname]|推送标签到远端|<br>|git tag -d [tagname]|删除本地标签|<br>|git push origin :refs/tags/[tagname]|删除远端tag|</p>
-<p>###其他：<br>|命令|作用|<br>|—|—|<br>|git commit -m ‘initial commit’(错误的提交)； git add filename(添加忘提交的文件)； git commit –amend -m ‘新的提交信息’(覆盖之前错误的提交)|有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。此时，可以运行带有 –amend 选 项的提交命令尝试重新提交|<br>|git clean -fd [filename]| 删除未跟踪文件|</p>
-<p>More info: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener"></a></p>
+        <p>###分支：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git branch [branchname]</td>
+<td>创建分支</td>
+</tr>
+<tr>
+<td>git checkout [branchname]</td>
+<td>切换分支</td>
+</tr>
+<tr>
+<td>git checkout -b [branchname]</td>
+<td>创建并切换到新的分支</td>
+</tr>
+<tr>
+<td>git branch -d [branchname]</td>
+<td>删除分支</td>
+</tr>
+<tr>
+<td>git push origin [branchname]</td>
+<td>将本地分支推送到远端</td>
+</tr>
+<tr>
+<td>git push origin –delete [branchname]</td>
+<td>删除远程分支</td>
+</tr>
+<tr>
+<td>git checkout -b [branchname] [tagname]</td>
+<td>检出标签，在特定的标签上创建一个新的分支</td>
+</tr>
+</tbody>
+</table>
+<p>###标签：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git tag -a [tagname] -m ‘标签描述信息’</td>
+<td>打标签</td>
+</tr>
+<tr>
+<td>git tag -a [tagname] 9fceb02 -m ‘标签信息’</td>
+<td>后期打标签(9fceb02:提交的校验和)</td>
+</tr>
+<tr>
+<td>git push origin [tagname]</td>
+<td>推送标签到远端</td>
+</tr>
+<tr>
+<td>git tag -d [tagname]</td>
+<td>删除本地标签</td>
+</tr>
+<tr>
+<td>git push origin :refs/tags/[tagname]</td>
+<td>删除远端tag</td>
+</tr>
+</tbody>
+</table>
+<p>###其他：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git commit -m ‘initial commit’(错误的提交)； git add filename(添加忘提交的文件)； git commit –amend -m ‘新的提交信息’(覆盖之前错误的提交)</td>
+<td>有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。此时，可以运行带有 –amend 选 项的提交命令尝试重新提交</td>
+</tr>
+<tr>
+<td>git clean -fd [filename]</td>
+<td>删除未跟踪文件</td>
+</tr>
+</tbody>
+</table>
+<p>More info: <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">ProGit</a></p>
 
       
     </div>
